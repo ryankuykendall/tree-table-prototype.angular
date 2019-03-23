@@ -1,0 +1,68 @@
+.mat-icon-button[disabled] {
+  display: none;
+}
+
+.tree-table-header {
+  display: table-row;
+}
+
+.tree-table-header .cell {
+  font-weight: 500;
+}
+
+.mat-tree {
+  box-sizing: border-box;
+  display: table;
+  width: 100%;
+}
+
+.mat-tree-node {
+  box-sizing: border-box;
+  display: table-row;
+  min-height: 40px !important;
+  height: 100px !important;
+  max-height: 40px !important;
+  padding: 0;
+  width: 100%;
+}
+
+.tree-table-header .cell,
+.mat-tree-node .cell {
+  border: 1px dotted #c00;
+  box-sizing: border-box;
+  display: table-cell;
+  height: 100%;
+  line-height: 40px;
+}
+
+matt-tree-node .cell:first-of-type {
+  width: 50%;
+}
+
+.mat-tree-node .cell[level="0"] {
+  padding-left: 0;
+}
+
+.mat-tree-node .cell[level="1"] {
+  padding-left: 24px;
+}
+
+.mat-tree-node .cell[level="2"] {
+  padding-left: 48px;
+}
+
+.mat-tree-node .cell[level="3"] {
+  padding-left: 72px;
+}
+
+.mat-tree-node .cell[level="4"] {
+  padding-left: 96px;
+}
+
+.mat-tree-node .cell[level="5"] {
+  padding-left: 120px;
+}
+
+.mat-tree-node .cell[level="6"] {
+  padding-left: 144px;
+}

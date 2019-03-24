@@ -115,7 +115,7 @@ export class ChecklistDatabase {
 @Component({
   selector: 'tree-checklist-example',
   templateUrl: 'tree-checklist-example.html',
-  styleUrls: ['tree-checklist-example.css'],
+  styleUrls: ['tree-checklist-example.scss'],
   providers: [ChecklistDatabase]
 })
 export class TreeChecklistExample {
@@ -161,7 +161,7 @@ export class TreeChecklistExample {
 
   hasNoContent = (_: number, _nodeData: TodoItemFlatNode) => _nodeData.item === '';
 
-  isHeader = (index: number, _nodeData: TodoItemFlatNode) => _nodeData.item.type === 'header';
+  isHeader = (index: number, _nodeData: TodoItemFlatNode) => index === 0;
 
   /**
    * Transformer to convert nested node to flat node. Record the nodes in maps for later use.

@@ -1,5 +1,11 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
+:root {
+  --tree-branch-indent: 24px;
+  --tree-leaf-indent-offset: 17px;
+  --tree-leaf-indent: calc(var(--tree-branch-indent) + var(--tree-leaf-indent-offset))
+}
+
 body { 
   font-family: Roboto, Arial, sans-serif;
   margin: 0;

@@ -1,0 +1,95 @@
+.mat-icon-button[disabled] {
+  display: none;
+}
+
+.tree-table-header {
+  display: table-row;
+}
+
+.tree-table-header .cell {
+  font-weight: 500;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.mat-tree {
+  box-sizing: border-box;
+  display: table;
+  position: relative;
+  width: 100%;
+}
+
+.mat-tree-node {
+  background-image: linear-gradient(0deg, #ddd 0px, #ddd 1px, white 1.1px);
+  border-bottom: 1px dotted #c00;
+  box-sizing: border-box;
+  display: table-row;
+  padding: 0;
+  width: 100%;
+}
+
+.tree-table-header .cell,
+.mat-tree-node .cell {
+  box-sizing: border-box;
+  display: table-cell;
+  height: 100%;
+  line-height: 40px;
+}
+
+matt-tree-node .cell:first-of-type {
+  width: 50%;
+}
+
+.mat-tree-node .cell[level="0"] {
+  padding-left: calc(var(--tree-branch-indent) * 0);
+}
+
+.mat-tree-node .cell[level="1"] {
+  padding-left: calc(var(--tree-branch-indent) * 1);
+}
+
+.mat-tree-node.leaf .cell[level="1"] {
+  padding-left: calc(var(--tree-leaf-indent) * 1);
+}
+
+
+.mat-tree-node .cell[level="2"] {
+  padding-left: calc(var(--tree-branch-indent) * 2);
+}
+
+.mat-tree-node.leaf .cell[level="2"] {
+  padding-left: calc(var(--tree-leaf-indent) * 2);
+}
+
+.mat-tree-node .cell[level="3"] {
+  padding-left: calc(var(--tree-branch-indent) * 3);
+}
+
+.mat-tree-node.leaf .cell[level="3"] {
+  padding-left: calc(var(--tree-leaf-indent) * 3);
+}
+
+.mat-tree-node .cell[level="4"] {
+  padding-left: calc(var(--tree-branch-indent) * 4);
+}
+
+.mat-tree-node.leaf .cell[level="4"] {
+  padding-left: calc(var(--tree-leaf-indent) * 4);
+}
+
+.mat-tree-node .cell[level="5"] {
+  padding-left: calc(var(--tree-branch-indent) * 5);
+}
+
+.mat-tree-node.leaf .cell[level="5"] {
+  padding-left: calc(var(--tree-leaf-indent) * 5);
+}
+
+.mat-tree-node .cell[level="6"] {
+  padding-left: calc(var(--tree-branch-indent) * 6);
+}
+
+.mat-tree-node.leaf .cell[level="6"] {
+  padding-left: calc(var(--tree-leaf-indent) * 6);
+}
